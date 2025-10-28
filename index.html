@@ -11,7 +11,13 @@
         var jsonTextareaText = document.getElementById("jsonInput").value;
 
         // parse the json text
-        JSON.parse(jsonTextareaText);
+        // try catch with alert prompt
+        try {
+          JSON.parse(jsonTextareaText);
+          alert("JSON is all good");
+        } catch (ex) {
+          alert("JSON error: " + ex.message);
+        }
       }
     </script>
   </head>
