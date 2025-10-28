@@ -14,14 +14,15 @@
         var messageSpan = document.getElementById("messageDisplay");
 
         // parse the json text
-        // try catch with alert prompt
+        // try catch displaing msg on span
         try {
           JSON.parse(jsonTextareaText);
           messageSpan.innerHTML =
-            "<span style: color=green;>JSON is valid</span>";
+            "<span style='color:green;'>JSON is valid</span>";
         } catch (ex) {
           var message = "error: " + ex.message;
-          messageSpan.innerHTML = message;
+          messageSpan.innerHTML =
+            "<span style='color:red'>" + message + "</span>";
         }
       }
     </script>
