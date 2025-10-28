@@ -45,7 +45,16 @@
 
       // retrieve user input from local storage
       //   and display it in the text area
-      function initApp() {}
+      function initApp() {
+        if (storageSUpported()) {
+          //  retrieve previous user input from local storage
+          var jsonText = localStorage.getItem("userInput");
+
+          // display previous user input in the textarea
+          if (jsonText != null) {
+          }
+        }
+      }
     </script>
   </head>
 
