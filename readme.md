@@ -57,10 +57,10 @@ THEN my previous input remains saved in localStorage
 
 ## 🧰 Technologies Used
 
-- 🧱 **HTML5** — Structure and layout  
-- 🎨 **CSS3** — Styling for a clean interface  
-- ⚙️ **JavaScript (ES6)** — Core validation logic and localStorage handling  
-- 💾 **localStorage API** — Client-side persistence of user data  
+- **HTML5** — Structure and layout  
+- **CSS3** — Styling for a clean interface  
+- **JavaScript (ES6)** — Core validation logic and localStorage handling  
+- **localStorage API** — Client-side persistence of user data  
 
 ---
 
@@ -115,6 +115,7 @@ try {
   messageSpan.className = "invalid";
 }
 ```
+
 ## Clone this repository:
 
 git clone https://github.com/brxwnsugxr/JSON-validation-with-localstorage.git
