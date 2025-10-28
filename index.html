@@ -6,6 +6,18 @@
     <title>JSON validate local storage</title>
     <!-- document script -->
     <script>
+      // return true if local storage supported
+      // otherwise return false
+      function storageSUpported() {
+        if (typeof Storage !== "undefined") {
+          // local storage is supported
+          return true;
+        } else {
+          // local storage is NOT supported
+          return false;
+        }
+      }
+
       function validateJson() {
         // get the json text from the textarea
         var jsonTextareaText = document.getElementById("jsonInput").value;
@@ -20,7 +32,7 @@
           messageSpan.innerHTML =
             "<span style='color:green;'>JSON is valid</span>";
         } catch (ex) {
-          var message = "error: " + ex.message;
+          var message = "Error: " + ex.message;
           messageSpan.innerHTML =
             "<span style='color:red'>" + message + "</span>";
         }
