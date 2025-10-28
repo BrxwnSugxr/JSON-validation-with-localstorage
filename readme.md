@@ -4,6 +4,21 @@ A simple web-based JSON validator that lets users input JSON, validate its struc
 
 ---
 
+
+## 🖼️ Screenshots
+
+### ✅ Valid JSON Example
+When valid JSON is entered, the message displays in green indicating success.
+
+![Valid JSON Screenshot](./validate-display.png)
+
+### ❌ Invalid JSON Example
+When invalid JSON is entered, an error message appears in red showing what went wrong.
+
+![Error JSON Screenshot](./error-display.png)
+
+---
+
 ## 🧠 Overview
 
 This project demonstrates how to:
