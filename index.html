@@ -31,7 +31,7 @@
         var messageSpan = document.getElementById("messageDisplay");
 
         // parse the json text
-        // try catch displaing msg on span
+        // try catch displaying msg on span
         try {
           JSON.parse(jsonTextareaText);
           messageSpan.innerHTML =
@@ -42,9 +42,15 @@
             "<span style='color:red'>" + message + "</span>";
         }
       }
+
+      // retrieve user input from local storage
+      //   and display it in the text area
+      function initApp() {}
     </script>
   </head>
-  <body>
+
+  <!-- whenever page loads initApp() function will run -->
+  <body onLoad="initApp()">
     Enter JSON to validate:<br />
     <!-- textarea -->
     <textarea id="jsonInput" rows="10" cols="50"></textarea>
