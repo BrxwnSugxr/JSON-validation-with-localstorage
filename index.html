@@ -10,13 +10,18 @@
         // get the json text from the textarea
         var jsonTextareaText = document.getElementById("jsonInput").value;
 
+        // get message span
+        var messageSpan = document.getElementById("messageDisplay");
+
         // parse the json text
         // try catch with alert prompt
         try {
           JSON.parse(jsonTextareaText);
-          alert("JSON is all good");
+          messageSpan.innerHTML =
+            "<span style: color=green;>JSON is valid</span>";
         } catch (ex) {
-          alert("JSON error: " + ex.message);
+          var message = "error: " + ex.message;
+          messageSpan.innerHTML = message;
         }
       }
     </script>
