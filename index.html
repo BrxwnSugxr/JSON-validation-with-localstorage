@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSON validate local storage</title>
+    <!-- document script -->
+    <script>
+      function validateJson() {
+        // get the json text from the textarea
+        var jsonTextareaText = document.getElementById("jsonInput").value;
+
+        // parse the json text
+        JSON.parse(jsonTextareaText);
+      }
+    </script>
   </head>
   <body>
     Enter JSON to validate:<br />
     <!-- textarea -->
     <textarea id="jsonInput" rows="10" cols="50"></textarea>
 
-    <!-- button to validate -->
-    <br /><button>Validate JSON</button>
+    <!-- button to validatesSON -->
+    <br /><button onclick="validateJson()">Validate JSON</button>
     <!-- display the message -->
     <span id="messageDisplay"></span>
   </body>
