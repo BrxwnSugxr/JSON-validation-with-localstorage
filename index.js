@@ -43,7 +43,7 @@ function initApp() {
 
     // display previous user input in the textarea
     if (jsonText != null) {
-      var jsonTextarea = (document.getElementById("jsonInput").value =
+      var jsonTextareaText = (document.getElementById("jsonInput").value =
         jsonText);
     }
   }
