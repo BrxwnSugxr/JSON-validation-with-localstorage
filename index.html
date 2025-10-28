@@ -22,8 +22,13 @@
         // get the json text from the textarea
         var jsonTextareaText = document.getElementById("jsonInput").value;
 
+        // save user input into local storage
+        if(storageSUpported()){
+            localStorage.setItem("userInput"), ;
+        }
+
         // get message span
-        var messageSpan = document.getElementById("messageDisplay");
+        var messageSpan = document.getElementById("messageDisplay", jsonTextareaText);
 
         // parse the json text
         // try catch displaing msg on span
